@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwindcss x Figma Portfolio</title>
     <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,12 +13,12 @@
 <body class="font-poppins overflow-x-hidden">
     <!--navogation bar-->
     <nav class="flex top-[40px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white absolute z-50">
-        <ul class="flex gap-28 items-center cursor-pointer">
-            <a href="#top"><li>Home</li></a>
-            <a href="#about"><li>About me</li></a>
+        <ul class="flex gap-28 items-center">
+            <a href="#top" class="cursor-pointer hover:font-semibold"><li>Home</li></a>
+            <a href="#about" class="cursor-pointer hover:font-semibold"><li>About me</li></a>
             <li><img src="./assets/logo.png" alt="logo"></li>
-            <a href="#work"><li>Work</li></a>
-            <a href="#contact"><li>Contact</li></a>
+            <a href="#work" class="cursor-pointer hover:font-semibold"><li>Work</li></a>
+            <a href="#contact" class="cursor-pointer hover:font-semibold"><li>Contact</li></a>
         </ul>
     </nav>
 
@@ -39,8 +40,8 @@
     </div>
     <!--about me page-->
     <div class="bg-[#0F103F] h-[110dvh] -scroll-mt-24" id="about">
-        <img src="./assets/about-img.png" alt="astronaut" class="mx-auto">
-        <div class="text-white ml-[730px] -mt-[750px]">
+        <img src="./assets/about-img.png" alt="astronaut" class="mx-auto" id="fadeIn">
+        <div class="text-white ml-[730px] -mt-[750px]" id="fadeIn">
             <h4 class="font-bold text-xl mb-4">about me</h4>
             <p class="text-lg">
                 Lorem ipsum dolor sit amet,<br>
@@ -57,25 +58,25 @@
     </div>
 
     <!--works-->
-    <div class="bg-[#0F103F] w-screen h-[190dvh] -scroll-mt-[350px]" id="work">
+    <div class="bg-[#0F103F] w-screen h-[190dvh] -scroll-mt-[350px] auto-rotate" id="work">
         <img src="./assets/work-bg.png" alt="radial" class="mx-auto w-full">
-        <div class="-mt-[1000px] text-white items-center justify-center flex relative">
+        <div class="-mt-[1000px] text-white items-center justify-center flex relative" id="fadeUp">
             <h1 class="absolute top-0 left-0 right-0 text-center font-bold text-2xl">My Works</h1>
             <div class="flex mt-16 -mx-64 items-center">
                 <!--card-->
-                <div class="relative w-[380px] -mr-10">
+                <div class="relative w-[380px] -mr-10 hover:cursor-pointer hover:scale-110 duration-500">
                     <img src="./assets/design-bg.png" alt="chen" class="w-[380px] object-center rounded-[30px]">
                     <div class="w-full bg-black/30 bottom-0 absolute flex justify-center items-end py-4 rounded-b-[30px]">
                         <h3 class="font-poppins text-2xl font-bold">Designs</h3>
                     </div>
                 </div>
-                <div class="relative w-[440px] z-10">
+                <div class="relative w-[440px] z-10 hover:cursor-pointer hover:scale-110 duration-500">
                     <img src="./assets/ui-design-card.png" alt="chen" class="w-[440px] object-center rounded-[30px]">
                     <div class="w-full bg-black/30 bottom-0 absolute flex justify-center items-end py-4 rounded-b-[30px]">
                         <h3 class="font-poppins text-2xl font-bold">UI Designs</h3>
                     </div>
                 </div>
-                <div class="relative w-[380px] -ml-10 z-0">
+                <div class="relative w-[380px] -ml-10 z-0 hover:cursor-pointer hover:scale-110 duration-500">
                     <img src="./assets/mockup-card.png" alt="chen" class="w-[380px] object-center rounded-[30px]">
                     <div class="w-full bg-black/30 absolute bottom-0 flex justify-center items-end py-4 rounded-b-[30px]">
                         <h3 class="font-poppins text-2xl font-bold">Mocups</h3>
@@ -92,7 +93,7 @@
     <div class="bg-[#0F103F] w-screen h-[140dvh] flex items-center justify-center relative -scroll-mt-28" id="contact">
         <img src="./assets/astronaut-2.png" alt="astronaut" class="w-[375px] absolute top-[-30px] left-40 z-50">
         <!--container-->
-        <div class="w-[900px] h-[600px] bg-[#2F2F8A]/60 backdrop-blur-lg rounded-[30px] border-black border-[1px] border-solid text-white grid grid-cols-2 z-40">
+        <div class="w-[900px] h-[600px] bg-[#2F2F8A]/60 backdrop-blur-lg rounded-[30px] border-black border-[1px] border-solid text-white grid grid-cols-2 z-40" id="popShow"> 
             <!--info-->
             <div class="px-[91px] py-[53px]">
                 <h3 class="text-2xl font-bold mb-5">Get in touch</h3>
