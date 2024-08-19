@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss x Figma Portfolio</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="font-poppins overflow-x-hidden">
+    <!--navogation bar-->
+    <nav class="flex top-[40px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white absolute z-50">
+        <ul class="flex gap-28 items-center cursor-pointer">
+            <a href="#top"><li>Home</li></a>
+            <a href="#about"><li>About me</li></a>
+            <li><img src="./assets/logo.png" alt="logo"></li>
+            <a href="#work"><li>Work</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <!--landing page-->
+    <div class="bg-[#0F103F] w-screen h-dvh overflow-x-hidden box-border" id="top">
+        <img src="./assets/planet-1.png" alt="planet" class="absolute left-0 top-0 w-[250px] z-10">
+        <img src="./assets/planet-2.png" alt="planet" class="absolute right-0 bottom-0 w-[1000px] z-0">
+        <div>
+            <h1 class="font-bold text-6xl text-white absolute top-[270px] left-[180px]">
+                Creative UI Designer <br>
+                Aaron Mecate <br>
+                Based in Quezon City
+            </h1>
+                <div class="text-white flex gap-5 absolute top-[520px] left-[380px]">
+                    <a href="#" class="rounded-[30px] bg-gray-500 py-[13px] px-[67px] drop-shadow-md backdrop-blur-sm border-gray-800 border-[2px]">Hire me</a>
+                    <a href="#" class="rounded-[30px] bg-gradient-to-r from-[#C961DE] to-[#2954A3] py-[13px] px-[67px] drop-shadow-md backdrop-blur-sm border-gray-800 border-[2px]">Download CV</a> 
+                </div>
+        </div>
+    </div>
+    <!--about me page-->
+    <div class="bg-[#0F103F] h-[110dvh] -scroll-mt-24" id="about">
+        <img src="./assets/about-img.png" alt="astronaut" class="mx-auto">
+        <div class="text-white ml-[730px] -mt-[750px]">
+            <h4 class="font-bold text-xl mb-4">about me</h4>
+            <p class="text-lg">
+                Lorem ipsum dolor sit amet,<br>
+                consectetur adipiscing elit. Integer<br>
+                nibh turpis, lobortis non ante eget,<br>
+                posuere suscipit leo. Cras<br>
+                commodo convallis nisi, eget<br>
+                pharetra arcu sollicitudin a.<br>
+                Fusce sit amet egestas ligula,<br>
+                non dictum<br>
+                metus.
+            </p>
+        </div>
+    </div>
+
+    <!--works-->
+    <div class="bg-[#0F103F] w-screen h-[190dvh] -scroll-mt-[350px]" id="work">
+        <img src="./assets/work-bg.png" alt="radial" class="mx-auto w-full">
+        <div class="-mt-[1000px] text-white items-center justify-center flex relative">
+            <h1 class="absolute top-0 left-0 right-0 text-center font-bold text-2xl">My Works</h1>
+            <div class="flex mt-16 -mx-64 items-center">
+                <!--card-->
+                <div class="relative w-[380px] -mr-10">
+                    <img src="./assets/design-bg.png" alt="chen" class="w-[380px] object-center rounded-[30px]">
+                    <div class="w-full bg-black/30 bottom-0 absolute flex justify-center items-end py-4 rounded-b-[30px]">
+                        <h3 class="font-poppins text-2xl font-bold">Designs</h3>
+                    </div>
+                </div>
+                <div class="relative w-[440px] z-10">
+                    <img src="./assets/ui-design-card.png" alt="chen" class="w-[440px] object-center rounded-[30px]">
+                    <div class="w-full bg-black/30 bottom-0 absolute flex justify-center items-end py-4 rounded-b-[30px]">
+                        <h3 class="font-poppins text-2xl font-bold">UI Designs</h3>
+                    </div>
+                </div>
+                <div class="relative w-[380px] -ml-10 z-0">
+                    <img src="./assets/mockup-card.png" alt="chen" class="w-[380px] object-center rounded-[30px]">
+                    <div class="w-full bg-black/30 absolute bottom-0 flex justify-center items-end py-4 rounded-b-[30px]">
+                        <h3 class="font-poppins text-2xl font-bold">Mocups</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--contact me-->
+    <!--body of contact-->
+    
+
+    <div class="bg-[#0F103F] w-screen h-[140dvh] flex items-center justify-center relative -scroll-mt-28" id="contact">
+        <img src="./assets/astronaut-2.png" alt="astronaut" class="w-[375px] absolute top-[-30px] left-40 z-50">
+        <!--container-->
+        <div class="w-[900px] h-[600px] bg-[#2F2F8A]/60 backdrop-blur-lg rounded-[30px] border-black border-[1px] border-solid text-white grid grid-cols-2 z-40">
+            <!--info-->
+            <div class="px-[91px] py-[53px]">
+                <h3 class="text-2xl font-bold mb-5">Get in touch</h3>
+                <p class="text-lg mb-16">
+                    I’m very approachable and<br>
+                    would love to speak to you.<br>
+                    Feel free to call, send me an<br>
+                    email . Follow me in social<br>
+                    media or simply complete<br>
+                    the enquiry form.
+                </p>
+                <ul class="flex flex-col gap-4">
+                    <li class="flex items-center gap-4"><img src="./assets/phone-icon.png" alt="" srcset="">+639763008041</li>
+                    <li class="flex items-center gap-4"><img src="./assets/email-icon.png" alt="" srcset="">mecate.aaron.falla@gmail.com</li>
+                </ul>
+            </div>
+            <!--form-->
+            <div class="grid-cols py-[53px]">
+                <h3 class="font-bold text-2xl mb-[20px]">Send me a message</h3>
+                <form action="https://api.web3forms.com/submit" method="POST" class="gap-5 grid">
+                    <input type="hidden" name="access_key" value="dead0998-4e59-4f3e-b972-99ee96283527">
+                    <input type="text" placeholder="Name" required name="name" class="rounded-[10px] px-5 py-[10px] bg-white/30 w-[340px]">
+                    <input type="text" placeholder="Email Adress" required name="email" class="rounded-[10px] px-5 py-[10px] bg-white/30 w-[340px]">
+                    <input type="text" placeholder="Subject" class="rounded-[10px] px-5 py-[10px] bg-white/30 w-[340px]">
+                    <textarea required name="message" id="message" placeholder="You message" class="rounded-[10px] px-5 py-[10px] bg-white/30 w-[340px] h-[200px]"></textarea>
+                    <button class="px-[-30px] rounded-xl py-[10px] bg-gradient-to-r from-[#C961DE] to-[#2954A3] w-40">Send message</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="bg-[#1C1C65]  w-full h-[50dvh] items-center justify-center relative backdrop-blur-lg text-white grid grid-cols-1">
+        <img src="./assets/planet-4.png" alt="planet" class="absolute w-[952px] right-12 top-[-800px] z-20">
+        <img src="./assets/planet-3.png" alt="" srcset="" class="absolute top-[-180px] left-0 z-20">
+        <ul class="flex items-center justify-center gap-14 pt-28 cursor-pointer z-30">
+            <a href="#top"><li class="flex items-center justify-center gap-3"><img src="./assets/home.png" alt="home">Home</li></a>
+            <a href="#about"><li class="flex items-center justify-center gap-3"><img src="./assets/about.png" alt="about">About me</li></a>
+            <a href="#work"><li class="flex items-center justify-center gap-3"><img src="./assets/work.png" alt="person">Work</li></a>
+            <a href="#contact"><li class="flex items-center justify-center gap-3"><img src="./assets/contact.png" alt="phone">Contact</li></a>
+        </ul>
+        <ul class="flex justify-center items-center gap-3">
+            <li><img src="./assets/instagram-icon.png" alt="" class="w-12"></li>
+            <li><img src="./assets/github-icon.png" alt="" class="w-16"></li>
+            <li><img src="./assets/linkedin-icon.png" alt="" class="w-12"></li>
+            <li><img src="./assets/facebook-icon.png" alt="" class="w-12"></li>
+        </ul>
+        <hr class="w-5/6 mx-auto border-white/15">
+    </div>
+</body>
+</html>
